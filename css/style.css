@@ -737,17 +737,6 @@ ul {
   padding-top: 20px;
   border-top: 2px solid #eee;
 }
-@media (max-width: 768px) {
-  .wrapper-setting .backup .servers {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .wrapper-setting .backup .servers .server {
-    margin-top: 10px;
-  }
-}
 .wrapper-setting .backup .servers input[type=radio]:checked + .server {
   color: #0075ff;
   border-color: #0075ff;
@@ -764,6 +753,20 @@ ul {
 }
 .wrapper-setting .backup .servers .server:not(:last-child) {
   margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .wrapper-setting .backup .servers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper-setting .backup .servers .server {
+    margin-top: 10px;
+  }
+  .wrapper-setting .backup .servers .server:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 768px) {
