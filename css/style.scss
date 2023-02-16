@@ -769,14 +769,6 @@ ul {
       }
     }
     .servers {
-      @media (max-width: 768px) {
-        & {
-          flex-direction: column;
-        }
-        .server {
-          margin-top: 10px;
-        }
-      }
       padding-top: 20px;
       border-top: 2px solid #eee;
       input[type="radio"]:checked + .server {
@@ -795,6 +787,17 @@ ul {
           margin-right: 20px;
         }
         border-radius: 10px;
+      }
+      @media (max-width: 768px) {
+        & {
+          flex-direction: column;
+        }
+        .server {
+          margin-top: 10px;
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+        }
       }
     }
   }
